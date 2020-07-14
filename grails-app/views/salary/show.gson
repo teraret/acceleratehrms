@@ -1,0 +1,7 @@
+import com.finance.Salary
+
+model {
+	Salary salary
+}
+
+json tmpl.salary(salary)

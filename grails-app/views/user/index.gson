@@ -1,0 +1,18 @@
+import com.usermanagment.User
+
+model {
+	Iterable<User> userList
+	Long userCount
+  Long userPage
+  Long userPageCount
+
+}
+
+json {
+user tmpl.user(userList ?: [])
+count userCount
+page userPage
+totalpages userPageCount
+
+}
+

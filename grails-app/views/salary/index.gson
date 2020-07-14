@@ -1,0 +1,8 @@
+import com.finance.Salary
+
+model {
+	Iterable<Salary> salaryList
+}
+
+json tmpl.salary(salaryList ?: [])
+
